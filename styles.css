@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #514C8F;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #2d295f;
+    box-shadow: black 0 0 10px;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+#main-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.icon {
+    width: 20px;
+    vertical-align: middle;
+}

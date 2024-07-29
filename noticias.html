@@ -1,0 +1,20 @@
+<div class="noticias">
+    <h1>Notícias</h1>
+    <div id="news-feed">
+        <div class="news">Notícia 1</div>
+        <div class="news">Notícia 2</div>
+        <div class="news">Notícia 3</div>
+        <div class="news">Notícia 4</div>
+        <div class="news">Notícia 5</div>
+    </div>
+</div>
+<script>
+    let currentNewsIndex = 0;
+    const newsElements = document.querySelectorAll('#news-feed .news');
+    setInterval(() => {
+        newsElements.forEach((el, index) => {
+            el.style.display = index === currentNewsIndex ? 'block' : 'none';
+        });
+        currentNewsIndex = (currentNewsIndex + 1) % newsElements.length;
+    }, 5000);
+</script>
